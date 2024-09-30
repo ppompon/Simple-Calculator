@@ -1,0 +1,40 @@
+/*Geral Attributes*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Variables Attributes*/
+:root {
+    --borderElement-border: 2px solid red; 
+    --YellowBg-background: yellow;
+    --GreyBg-background: grey;
+}
+
+/*Objects Attributes*/
+button{
+    width:100%;
+    margin: 1px;
+    height: 100px;
+    font-size: 30px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    border: var(--borderElement-border);
+    background-color: var(--GreyBg-background)
+}
+#keyboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: var(--borderElement-border);
+}
+#calculator {
+    margin: auto;
+    width: 400px;
+    border: var(--borderElement-border);
+}
+#display{
+    height: 100px;
+}
